@@ -1,4 +1,5 @@
 <?php
+// Untuk meload semua class yang ada di folder pusatdata
 require_once "../pusatdata/core/init.php";
 ?>
 <!DOCTYPE html>
@@ -16,7 +17,7 @@ require_once "../pusatdata/core/init.php";
     <link href="../pusatdata/css/bootstrap.min.css" rel="stylesheet">
     <link href="../pusatdata/css/custom.min.css" rel="stylesheet">
     <link href="../pusatdata/css/simpel.css" rel="stylesheet">
-	
+
 </head>
 <body style="background-image:url('../images/background.jpg');color:#5c6d1b;">
   <div class="col-md-10" style="margin:0px 7%;">
@@ -34,9 +35,9 @@ require_once "../pusatdata/core/init.php";
 						<div class="tile-stats">
 						  <div class="icon"><i class="fa fa-caret-square-o-right"></i></div>
 						  <div class="count">
-							<?php 
-								$result = $mysqli->query("select count(*) as total, 
-									sum(if(week(tanggal_terima) = week(now()), 1, 0)) as minggu,									
+							<?php
+								$result = $mysqli->query("select count(*) as total,
+									sum(if(week(tanggal_terima) = week(now()), 1, 0)) as minggu,
 									b.totalselesai, c.blmkimia,c.blmfisika,c.blmbiologi,c.blmmineralogi, d.progkimia, d.progfisika, d.progbiologi, d.progmineralogi
 									from tborder
 									join
@@ -47,7 +48,7 @@ require_once "../pusatdata/core/init.php";
 									)b
 									join
 									(
-										select 
+										select
 											sum(if(kode_analisis like 'K%', 1, 0)) as blmkimia,
 											sum(if(kode_analisis like 'F%', 1, 0)) as blmfisika,
 											sum(if(kode_analisis like 'B%', 1, 0)) as blmbiologi,
@@ -58,7 +59,7 @@ require_once "../pusatdata/core/init.php";
 									)c
 									join
 									(
-										select 
+										select
 											sum(if(kode_analisis like 'K%', 1, 0)) as progkimia,
 											sum(if(kode_analisis like 'F%', 1, 0)) as progfisika,
 											sum(if(kode_analisis like 'B%', 1, 0)) as progbiologi,
@@ -80,7 +81,7 @@ require_once "../pusatdata/core/init.php";
 									$progkimia = $data['progkimia'];
 									$progmineralogi = $data['progmineralogi'];
 									$minggu = $data['minggu'];
-								}				
+								}
 								echo $total;
 							?>
 						  </div>
@@ -106,7 +107,7 @@ require_once "../pusatdata/core/init.php";
 								<div class="col-md-3">
 									<h3><?php echo $blmmineralogi;?></h3><h4>Mineralogi</h4>
 								</div>
-							</div>		  
+							</div>
 						</div>
 					</div>
 				  </div>
@@ -127,11 +128,11 @@ require_once "../pusatdata/core/init.php";
 								<div class="col-md-3">
 									<h3><?php echo $progmineralogi;?></h3><h4>Mineralogi</h4>
 								</div>
-							</div>		  
+							</div>
 						</div>
 					</div>
 				  </div>
-			  <div class="col-md-12 col-sm-12 col-xs-12">			  
+			  <div class="col-md-12 col-sm-12 col-xs-12">
 				   <div class="x_panel">
 					  <div class="x_title">
 						<h2>Grafik Permohonan Masuk <small>Minggu Ini</small></h2>
@@ -148,11 +149,11 @@ require_once "../pusatdata/core/init.php";
 						<div id="echart_line" style="height:350px;"></div>
 
 					  </div>
-					</div>					
+					</div>
 				  </div>
 			  </div>
 			</div>
-		</div>				
+		</div>
 	</div>
 
 	<div class="row">
@@ -169,7 +170,7 @@ require_once "../pusatdata/core/init.php";
 						 Indonesia, 16114<br>
 						 </address>
 				</div>
-				<div class="col-sm-4 col-sm-4">						
+				<div class="col-sm-4 col-sm-4">
 						<p><br>
 							<i class="icon-phone"></i> Telepon :(0251) 833-6757 <br>
 							<i class="icon-phone"></i> Fax : (0251) 8322-933 / 8321-608 <br><br>
@@ -183,10 +184,10 @@ require_once "../pusatdata/core/init.php";
 						</p>
 				</div>
 			  </div>
-				  
+
 			</div>
-		</div>				
-	
+		</div>
+
   </div>
 </body>
 </html>
@@ -197,7 +198,7 @@ require_once "../pusatdata/core/init.php";
     <!-- Bootstrap -->
     <script src="../pusatdata/js/bootstrap.min.js"></script>
     <script src="../pusatdata/js/bootstrap-select.js"></script>
-	
+
     <!-- FastClick -->
     <script src="../pusatdata/js/fastclick.js"></script>
 
@@ -207,31 +208,30 @@ require_once "../pusatdata/core/init.php";
     <script src="../pusatdata/js/gauge.min.js"></script>
     <!-- iCheck -->
     <script src="../pusatdata/js/icheck.min.js"></script>
-	
+
 	<!-- PDFmake -->
     <script src="../pusatdata/js/pdfmake.min.js"></script>
     <script src="../pusatdata/js/vfs_fonts.js"></script>
-	
-    <!-- Flot -->    
-    
+
+    <!-- Flot -->
+
     <script src="../pusatdata/js/morris.min.js"></script>
     <script src="../pusatdata/js/raphael.min.js"></script>
     <script src="../pusatdata/js/echarts.min.js"></script>
-	
-	
+
+
     <!-- DateJS -->
     <script src="../pusatdata/js/date.js"></script>
     <!-- bootstrap-daterangepicker -->
     <script src="../pusatdata/js/moment.min.js"></script>
     <script src="../pusatdata/js/daterangepicker.js"></script>
     <script src="../pusatdata/js/validator.js"></script>
-	
+
 	<!-- datatables -->
     <script src="../pusatdata/js/dataTables.responsive.min.js"></script>
     <script src="../pusatdata/js/responsive.bootstrap.js"></script>
     <script src="../pusatdata/js/dataTables.bootstrap.min.js"></script>
-	
+
     <!-- Custom Theme Scripts -->
     <script src="../pusatdata/js/custom.min.js"></script>
     <script src="../pusatdata/js/simpel.js"></script>
-	
