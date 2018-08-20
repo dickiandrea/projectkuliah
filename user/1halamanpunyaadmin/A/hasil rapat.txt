@@ -1,0 +1,17 @@
+Hasil Rapat Bersama Pak Joko, Pak Usman dan Bu Yuni, 12 September 2017.
+1. Nama Balai Penelitian Tanah di judul halaman awal di turunan.
+2. Nama "Sistem Pelayanan Jasa" di ganti menjadi "Sistem Pelayanan Laboratorium".
+3. Halaman Kontak :
+	email : pelayananbalittanah@gmail.com
+	no telp : 0812 9484 2127 (Nomer Pelayanan)
+4. Daftar tarif penelitian simpan dibagian halaman sebelum login
+5. Invoice berisi informasi permohonan penelitian yang terpilih
+6. Di halaman mulai penelitian diganti, mulai pengujian
+
+output bagian custumer :
+1. Invoice permohonan
+2. Kwitansi
+
+Apabila sudah konfirmasi pembayaran, pemohon dapat nomer contoh.
+
+Jadwal Rapat Perkembangan Projek : Setiap Senin dan Rabu

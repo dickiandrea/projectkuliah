@@ -1,0 +1,278 @@
+body{ font-family: sans-serif; margin:0;}
+.wrapper{width: 93%;margin: 0 auto;}
+.clear:after{content: "";display: table;clear: both;}
+.float-left{float: left;}
+*{font-family: monospace lucida console;}
+a{color: #A10202; text-decoration: none;}
+ul.kepinggir {width: 80%;height: 100%; margin-top: 0px;}
+.kepinggir li{display: inline-block; transition: 0.5s; }
+.kepinggir li a{display: block; text-align: center; line-height: 40px;color: white;}
+.kepinggir li:hover{opacity: 0.7;}
+
+.pencarian{line-height: 40px; width: 30%;}
+input[type="search"]{ padding: 3px 10px; font-size: 12px; width: 60%;border: none;border-radius: 3px;}
+input[type="button"]{ padding: 4px 10px; width: 100px; background-color: #22BB03; border: none; cursor: pointer; border-radius: 3px; color: white;}
+/* Pengaturan content-header*/
+.pilihdepartemen{
+  background-color: #006766;
+  width:100%;
+  height: 40px;
+}
+.menudepartemen{
+  width: 70%;
+  height: 40px;
+}
+.menudepartemen li{
+  width: 17%; float:left;
+  font-size: 12px;
+}
+.menudepartemen li:hover{background-color: #205241;}
+.branding{min-height: 150px; padding: 0% 5%; z-index: -1;}
+.gambar-branding{width: 300px; height: 150px;background-color: none; float: left; margin-left: 3%; }
+.gambar-branding img{width: 50%;}
+.judul-branding{
+  width: 500px;
+  margin-left: 8%;
+  height: 150px;
+  /*background-color: pink;*/
+  text-align: center;
+  display: block;
+  float: left;
+  word-spacing: 3px; letter-spacing: 1px;
+}
+.judul-branding h5{ position: relative; bottom: -20px; left: -90px;}
+
+.menuutama li{width: 13%; font-size: 14px; float:left; font-weight: bold;}
+.menuutama li a:hover{background-color: white; color:black;}
+#header-pencarian{
+  width: 30%;
+  line-height: 30px;
+  margin-top: -10px;
+  background-color: red;
+}
+/* Pengaturan content-tengah*/
+.content-tengah{
+  padding: 5px 0px;
+}
+.c-utama{
+  width: 70%;
+  min-height: 500px;
+  background-color: skyblue;
+  padding: 5px 0px;
+}
+.c-sidebar{
+  width: 30%;
+  min-height: 500px;
+  background-color: green;
+}
+
+.sub-c-sidebar{
+  width: 100%;
+  background-color: green;
+}
+
+.ibu-link{
+  width: 95%;
+}
+.ibu-link h2{
+  background-color: #006766;
+  color: white;
+  margin: 0;
+  font-size: 20px;
+  padding: 5px 0;
+  transition: 0.5s;
+}
+.ibu-link li{
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  line-height: 30px;
+  margin-left: -30px;
+}
+.anak-link li{
+  text-align: center;
+  line-height: 40px;
+  margin-top: 1px;
+  margin-left: -40px;
+  width: 112%;
+}
+.anak-link a{
+  display: block;
+  text-align: justify; padding: 0px 5px;
+  font-size: 14px;
+  color: white;
+  background-color: brown;
+  margin-top: 1px;
+  width: 98%;
+  transition: 1s;
+  border-radius: 3px;
+}
+.ibu-link li:hover > h2{
+  color: black;
+  background-color: white;
+}
+
+.anak-link a:focus{
+  width: 95%;
+  margin-left: 16px;
+  opacity: 0.8;
+}
+.anak-link a:hover{
+  width: 93%;
+  margin-left: 21px;
+  opacity: 0.8;
+  background-color: red;
+}
+
+.sub-c-utama{
+  width: 98%;
+  height: 130px;
+  margin: 0px auto;
+  background-color: green;
+  border: 1px solid black;
+}
+.gambar-sub-c-utama{
+  width: 30%;height: 100%;
+  background-color: grey;
+}
+.gambar-sub-c-utama img{
+  height: 100%;
+  background-color: grey;
+}
+
+.sub-c-utama:first-child{
+  width: 98%;
+  height: 180px;
+  margin: 0px auto;
+  background-color: green;
+  border: 1px solid black;
+}
+
+.keterangan-sub-c-utama{
+  width: 70%;height: 100%;
+  background-color: yellow;
+  font-size: 16px;
+}
+.keterangan-sub-c-utama a{
+  display: block;
+  width: 90%;
+  margin-left: 20px;
+  text
+}
+
+.lihat_artikel{
+  width:95%;
+  margin: auto;
+  padding: 5px;
+}
+
+.lihat_artikel img{
+  width: 90%;
+  margin: auto;
+}
+/* Pengaturan content-footer*/
+.content-footer{
+  width: 100%;
+  height: 220px;
+  margin-top: 10px;
+  background-color: #006766;
+}
+
+.kontak-sosial{
+  height: 70%;
+  background-color: yellow; margin-bottom: 5px;
+}
+
+.pernyataan {padding: 10px; text-align: center;float: left; margin: 10px auto;}
+.pernyataan p{font-size: 11px;color: white; font-weight: lighter; }
+
+.sub-kontak{
+  color: white;
+  width: 33%;
+  margin: 0px 1px;
+  height: 120px;
+  text-align: center;
+  /*background-color: grey;*/
+}
+.sub-kontak p {font-size: 12px; padding: 0px 10p;}
+
+.list-media img{ width: 50px;height:50px;}
+
+.menu-close{
+  display: none !important;
+}
+
+/*    Halaman home    */
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+    position: relative;
+    text-align: center;
+    height: 450px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+    font-size: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1){
+    background: red;
+}
+.slide:nth-of-type(2){
+    background: orange;
+}
+.slide:nth-of-type(3){
+    background: green;
+}
+.slide:nth-of-type(4){
+    background: blue;
+}
+.slide:nth-of-type(5){
+    background: purple;
+}
+
+/*    Animasi   */
+@keyframes fadein{
+  0%{ height: 0px;}
+  100%{ height: 150px; }
+}
+@keyframes fadeout{
+  0%{ height: 150px;}
+  100%{ height: 0px;}
+}

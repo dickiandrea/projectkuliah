@@ -1,0 +1,56 @@
+.main{
+	
+}
+
+
+.kop{
+	float : float;
+	width : 100%;
+	margin-left : -7px;
+	height : auto;
+	text-align: center;
+}
+
+.hrkop{
+	border : 2px solid #000;
+	margin-top : -13px;
+}
+
+.kementan{
+	float : left;
+	width : 110px;
+	height : 100px;
+	margin-top : -150px;
+	margin-left : 0px;
+}
+
+.agro{
+	float : right;
+	width : 110px;
+	height : 100px;
+	margin-left : -60px;
+	margin-top : -135px;
+}
+
+.kolomttd{
+	width : 100%;
+	height : auto;
+	padding : 5px;
+}
+
+.pemohon{
+	float : left;
+	width : 30%;
+	height : auto;
+}
+
+.petugas{
+	float : right;
+	width : 20%;
+	height : auto;
+}
+/* Theme Styler :: End */
+
+.bukabro{
+	display: block !important;
+}
