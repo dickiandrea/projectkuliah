@@ -1,5 +1,5 @@
 <?php
-
+// Meload semua class yang ada di folder pusat data
 require_once "../pusatdata/core/init.php";
 
 	if(Session::exists('pelayanan'))
@@ -61,14 +61,14 @@ if(Input::get('login') == 'login'){
 		$query = "SELECT kode_admin, nama_admin, username, kode_akses, password FROM admin where username='$user'";
 		$result = $mysqli->query($query);
 		if(($result->num_rows) > 0)
-		{	
+		{
 			while($data = $result->fetch_assoc()){
 			  $password = $data['password'];
 			  $nama_admin = $data['nama_admin'];
 			  $kode_akses = $data['kode_akses'];
 			  $kode_admin = $data['kode_admin'];
-			  
-				  if(password_verify($pass, $password)){				
+
+				  if(password_verify($pass, $password)){
 					if($kode_akses == "PL")
 					{
 						Session::set('userpelayanan', $user);
@@ -76,7 +76,7 @@ if(Input::get('login') == 'login'){
 						Session::set('namapelayanan', $nama_admin);
 						Session::set('pelayanan', $kode_akses);
 						Session::set('kdadmin1', $kode_admin);
-						
+
 						?>
 							<script language="javascript" type="text/javascript">alert("Selamat Datang <?php echo $nama_admin; ?> di Halaman Pelayanan Jasa");
 							document.location='adminpage.php'	</script>
@@ -86,23 +86,23 @@ if(Input::get('login') == 'login'){
 							<script language="javascript" type="text/javascript">alert("Akses Ditolak");</script>
 						<?php
 					}
-					
-		
+
+
 				}
-			
+
 			}
-			
+
 			?>
 			<script language="javascript" type="text/javascript">alert("Password anda salah!");
 			</script>
 			<?php
-			
+
 		}else{
 			?>
 			<script language="javascript" type="text/javascript">alert("Username yang anda masukan salah!");
 			</script>
 			<?php
 		}
-		
+
 	}
  ?>
